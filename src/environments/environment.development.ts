@@ -1,1 +1,4 @@
-export const environment = {};
+export const environments = {
+    production: false,
+    baseApiUrl: 'http://localhost:3333/'
+};
