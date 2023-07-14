@@ -14,18 +14,21 @@
     flex-wrap: wrap;
     max-width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 98vw;
   }
   
   .moment {
-    width: 32%;
-    margin-bottom: 1em;
+    width: 30%;
+    margin: 0 1em 1em 1em;
     text-align: center;
   }
   
   .moment img {
-    width: 100%;
+    width: 19em;
+    height: 19em;
     margin-bottom: 1em;
+    object-fit: cover;
   }
   
   .moment h3,
