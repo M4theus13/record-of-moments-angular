@@ -37,7 +37,6 @@ export class HomeComponent {
       this.allMoments = items.data
       this.moments = items.data
 
-      console.log(data)
     })
   }
 
