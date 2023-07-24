@@ -5,12 +5,16 @@
     justify-content: center;
     padding: 2em;
   }
-  
-  h2,
+
+  h2 {
+    margin-bottom: 3em;
+  }
+
   p {
     margin-bottom: 1em;
+    text-align: center;
   }
-  
+
   .about a {
     text-decoration: underline;
     margin-bottom: 1em;

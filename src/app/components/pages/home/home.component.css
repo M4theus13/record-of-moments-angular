@@ -4,71 +4,112 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+
   .home-container h1 {
     margin-bottom: 0.5em;
   }
-  
+
   .moments-container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 80%;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    width: 98vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
   }
-  
+
   .moment {
-    width: 30%;
+    width: 100%;
     margin: 0 1em 1em 1em;
     text-align: center;
   }
-  
+
   .moment img {
     width: 19em;
     height: 19em;
     margin-bottom: 1em;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: rgb(234, 234, 234);
   }
-  
+
   .moment h3,
   .moment p {
     margin-bottom: 1em;
   }
-  
+
   .moment .date {
     font-size: 0.7em;
     font-style: italic;
   }
-  
+
   a {
     color: #dec129;
     padding: 0.3em 0.6em;
   }
-  
+
   a:hover {
     background-color: #efefef;
   }
-  
+
   .search-container {
     margin-bottom: 2em;
     width: 100%;
   }
-  
+
   .search-container form {
     width: 30%;
     position: relative;
   }
-  
+
   .search-container fa-icon {
     position: absolute;
     top: 8px;
     left: 8px;
   }
-  
+
   .search-container input {
     padding: 0.5em;
     margin: 0 auto;
     width: 100%;
     text-align: center;
+  }
+
+  @media (max-width:1420px) {
+    .moments-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width:1060px) {
+    .moments-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width:860px) {
+
+
+    .search-container form {
+      width: 70%;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+
+    .search-container {
+      font-size: 12px;
+    }
+
+    .moment img {
+      width: 16em;
+      height: 16em;
+    }
+  }
+
+  @media (max-width:600px) {
+    .moments-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .search-container form {
+      width: 80%;
+    }
   }
